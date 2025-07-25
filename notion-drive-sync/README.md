@@ -237,6 +237,4 @@ This project is open source and available under the MIT License.
 - Review [Notion API documentation](https://developers.notion.com)
 - Open an issue for bugs or feature requests
 
----
 
-**Made with ❤️ for seamless Notion-to-Drive workflows** 
