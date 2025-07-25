@@ -1,6 +1,21 @@
 # Notion to Google Drive Sync
 
-A robust Google Cloud Function that automatically syncs your Notion pages to Google Drive in multiple formats. When you trigger the sync from Notion, your pages are converted and saved as both plain text files and Google Docs with comprehensive metadata extraction.
+  Overview
+
+  This script is a Google Cloud Function that syncs Notion pages to Google
+  Drive in two formats:
+  1. Plain text files (.txt) - saved to folder 0ADh8oHDMGlVNUk9PVA
+  2. Google Docs (.gdoc) - saved to folder 0AE4_IKRqRvtYUk9PVA
+
+  How It Works
+
+  Webhook Flow
+
+  1. Notion button triggers webhook to https://us-central1-demand-io-base.cloudfunctions.net/sync_notion_to_drive
+  2. Service Account: 640633174857-compute@developer.gserviceaccount.com
+  3. Function receives webhook payload and extracts page ID
+  4. Syncs the page as both .txt and .gdoc formats
+  5. Returns success/error response
 
 ## ✨ Features
 
