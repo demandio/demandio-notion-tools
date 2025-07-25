@@ -1,0 +1,78 @@
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.yaml
+.env.yml
+.env.local
+.env.production
+.env.staging
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude assistant files
+.claude/
+
+# Google Cloud
+.gcloudignore
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Archives and zips
+*.zip
+*.tar.gz
+*.tar
+*.rar
+
+# Deployed source
+deployed_src/
+deployed_src*/ 
