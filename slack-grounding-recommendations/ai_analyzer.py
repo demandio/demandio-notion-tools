@@ -60,52 +60,92 @@ class AIAnalyzer:
         return "\n---\n".join(formatted)
         
     def _format_messages(self, messages: List[Dict]) -> str:
-        """Format Slack messages for the prompt."""
+        """Format Slack messages for the prompt, preserving thread context."""
         formatted = []
+        
+        # Group messages by thread
+        threads: Dict[str, List[Dict]] = {}
+        standalone_messages: List[Dict] = []
+        
         for msg in messages:
-            # Get message permalink if available
-            try:
-                permalink = msg.get("permalink") or f"https://slack.com/archives/{msg['channel_id']}/p{msg['ts'].replace('.', '')}"
-            except:
-                permalink = "N/A"
-                
+            if msg.get("is_thread_reply"):
+                parent_ts = msg.get("parent_ts")
+                if parent_ts not in threads:
+                    threads[parent_ts] = []
+                threads[parent_ts].append(msg)
+            elif msg.get("thread_ts"):
+                # This is a parent message with replies
+                if msg["ts"] not in threads:
+                    threads[msg["ts"]] = []
+                threads[msg["ts"]].insert(0, msg)  # Put parent first
+            else:
+                # Standalone message
+                standalone_messages.append(msg)
+        
+        # Format threaded conversations
+        for thread_messages in threads.values():
+            parent = thread_messages[0]  # Parent message is first
+            thread_text = [
+                f"THREAD START - {datetime.fromtimestamp(float(parent['ts'])).isoformat()}\n"
+                f"LINK: {parent.get('permalink', 'N/A')}\n"
+                f"PARENT MESSAGE: {parent.get('text', '')}\n"
+            ]
+            
+            # Add replies in chronological order
+            for reply in thread_messages[1:]:
+                thread_text.append(
+                    f"REPLY - {datetime.fromtimestamp(float(reply['ts'])).isoformat()}\n"
+                    f"LINK: {reply.get('permalink', 'N/A')}\n"
+                    f"TEXT: {reply.get('text', '')}\n"
+                )
+            
+            thread_text.append("THREAD END\n")
+            formatted.append("\n".join(thread_text))
+        
+        # Format standalone messages
+        for msg in standalone_messages:
             formatted.append(
-                f"TIME: {datetime.fromtimestamp(float(msg['ts'])).isoformat()}\n"
-                f"LINK: {permalink}\n"
+                f"MESSAGE - {datetime.fromtimestamp(float(msg['ts'])).isoformat()}\n"
+                f"LINK: {msg.get('permalink', 'N/A')}\n"
                 f"TEXT: {msg.get('text', '')}\n"
             )
-        return "\n---\n".join(formatted)
         
+        return "\n---\n".join(formatted)
+
     def _construct_prompt(self, formatted_blocks: str, formatted_messages: str) -> str:
         """Construct the prompt for Claude."""
         return f"""
         **ROLE AND GOAL:**
-        You are an expert Technical Program Manager analyzing Slack messages to identify potential updates needed in Notion documentation. Your goal is to identify conflicts, new information, or outdated content.
+        You are an expert Technical Program Manager analyzing Slack messages and their thread replies to identify potential updates needed in Notion documentation. Your goal is to identify conflicts, new information, or outdated content.
 
         **PRIMARY CONTEXT: The Source of Truth (Notion Blocks)**
         {formatted_blocks}
 
-        **INPUT DATA: Recent Slack Messages**
+        **INPUT DATA: Recent Slack Messages and Threads**
         {formatted_messages}
 
         **YOUR TASK:**
-        Carefully analyze each Slack message and compare it against the Notion blocks. Identify messages that contain:
+        Carefully analyze each Slack message and its thread replies, comparing them against the Notion blocks. Pay special attention to threaded conversations as they often contain important clarifications, corrections, or updates. Identify messages that contain:
         1. New information not present in the documentation
         2. Updates to existing information
         3. Direct conflicts with documented information
-        4. Important clarifications or corrections
+        4. Important clarifications or corrections found in thread replies
+        5. Consensus or final decisions reached in thread discussions
 
         **RULES:**
         1. Focus on factual conflicts or definitive updates only
         2. Each suggestion must reference a specific BLOCK_ID
-        3. Provide high confidence suggestions only
-        4. Consider context and avoid superficial changes
+        3. Consider the full context of threaded conversations
+        4. Pay special attention to thread conclusions and consensus
+        5. Provide high confidence suggestions only
+        6. Consider context and avoid superficial changes
 
         **REQUIRED OUTPUT FORMAT:**
         For each suggestion, provide:
 
         **Suggestion N**
         * **Source Message Link:** `<Link to the Slack message>`
+        * **Thread Context:** `<Brief summary of relevant thread discussion if applicable>`
         * **Triggering Text:** "`<Quote the exact phrase from Slack.>`"
         * **Conflicting Block ID:** "`<The exact BLOCK_ID of the outdated Notion block.>`"
         * **Conflicting Text in Block:** "`<Quote the specific sentence from the Notion block's content.>`"
@@ -138,8 +178,13 @@ class AIAnalyzer:
                 
                 # Extract link
                 link_start = part.find("**Source Message Link:**") + len("**Source Message Link:**")
-                link_end = part.find("**Triggering Text:**")
+                link_end = part.find("**Thread Context:**")
                 suggestion["source_message_link"] = part[link_start:link_end].strip().strip("`")
+                
+                # Extract thread context
+                context_start = part.find("**Thread Context:**") + len("**Thread Context:**")
+                context_end = part.find("**Triggering Text:**")
+                suggestion["thread_context"] = part[context_start:context_end].strip().strip('"')
                 
                 # Extract triggering text
                 text_start = part.find("**Triggering Text:**") + len("**Triggering Text:**")

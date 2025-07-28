@@ -64,15 +64,26 @@ def get_gcp_project_id() -> str:
     """Get the Google Cloud project ID."""
     return get_required_env("GOOGLE_CLOUD_PROJECT")
 
+def get_anthropic_api_key() -> str:
+    """Get the Anthropic API key."""
+    return get_required_env("ANTHROPIC_API_KEY")
+
+def get_openai_api_key() -> str:
+    """Get the OpenAI API key."""
+    return get_required_env("OPENAI_API_KEY")
+
+def get_gemini_api_key() -> str:
+    """Get the Google Gemini API key."""
+    return get_required_env("GEMINI_API_KEY")
+
+def get_slack_bot_token() -> str:
+    """Get the Slack bot token."""
+    token = get_required_env("SLACK_BOT_TOKEN")
+    if not token.startswith("xoxb-"):
+        raise ValueError("Invalid Slack bot token format. Must start with 'xoxb-'")
+    return token
+
 # Tool-specific environment variables
 def get_drive_folder_id() -> str:
     """Get the Google Drive folder ID for notion-drive-sync."""
-    return get_required_env("GOOGLE_DRIVE_FOLDER_ID")
-
-def get_slack_bot_token() -> str:
-    """Get the Slack bot token for slack-grounding-recommendations."""
-    return get_required_env("SLACK_BOT_TOKEN")
-
-def get_anthropic_api_key() -> str:
-    """Get the Anthropic API key for slack-grounding-recommendations."""
-    return get_required_env("ANTHROPIC_API_KEY") 
+    return get_required_env("GOOGLE_DRIVE_FOLDER_ID") 

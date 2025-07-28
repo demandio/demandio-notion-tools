@@ -1,0 +1,803 @@
+# User mappings with Notion and Slack information
+USER_MAPPINGS: Dict[str, UserMapping] = {
+    # Isaac Sornborger
+    "isaac@demand.io": {
+        "email": "isaac@demand.io",
+        "notion_id": "36b4c0f7-b43a-4188-abfd-dd0710ff7e81",
+        "notion_name": "Isaac Sornborger",
+        "slack_id": "U04SBLX6U83",
+        "slack_name": "@isaac",
+    },
+    # Corina Baldasare
+    "corina@demand.io": {
+        "email": "corina@demand.io",
+        "notion_id": "9eaa8517-bf72-426e-a336-06f26e85b8a3",
+        "notion_name": "Corina Baldasare",
+        "slack_id": "U067A351Q1M",
+        "slack_name": "@corinabaldasare",
+    },
+    # Harrison DeSantis
+    "harrison@demand.io": {
+        "email": "harrison@demand.io",
+        "notion_id": "2c3be0ed-f15c-43f2-8f8e-30384b357f43",
+        "notion_name": "Harrison DeSantis",
+        "slack_id": "U06GRMEQ7NW",
+        "slack_name": "@harrisondesantis",
+    },
+    # Michael Quoc
+    "m@demand.io": {
+        "email": "m@demand.io",
+        "notion_id": "147b5c93-8782-48ff-807b-3f28793fa211",
+        "notion_name": "Michael Quoc",
+        "slack_id": "U01FYL3UPQQ",
+        "slack_name": "@mike443",
+    },
+    # Kate Seldman
+    "kwseldman@gmail.com": {
+        "email": "kwseldman@gmail.com",
+        "notion_id": "b6a9b4d4-077c-4391-bcb7-a518a66ed806",
+        "notion_name": "Kate Seldman",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Rachelle
+    "rachelle@demand.io": {
+        "email": "rachelle@demand.io",
+        "notion_id": "e36f952f-6a72-44f5-a3c8-e7dba3a42479",
+        "notion_name": "Rachelle",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # April Rose Mirafuentes
+    "april@demand.io": {
+        "email": "april@demand.io",
+        "notion_id": "1d5a46fa-bee7-4235-9a48-b5d7efee9a33",
+        "notion_name": "April Rose Mirafuentes",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Lucca Silva
+    "lucca@demand.io": {
+        "email": "lucca@demand.io",
+        "notion_id": "f783c62f-bbda-4882-b521-43e95333b624",
+        "notion_name": "Lucca Silva",
+        "slack_id": "U0695T1H5GF",
+        "slack_name": "@luccadasilva",
+    },
+    # David Guzman
+    "david@demand.io": {
+        "email": "david@demand.io",
+        "notion_id": "c201c535-30a5-4130-b717-3cef09e3080c",
+        "notion_name": "David Guzman",
+        "slack_id": "U06A8LT89BM",
+        "slack_name": "@davidguzman",
+    },
+    # Vernie Dag-uman
+    "vernie@demand.io": {
+        "email": "vernie@demand.io",
+        "notion_id": "2113cda4-bc6f-4f6c-8b84-385d72af028f",
+        "notion_name": "Vernie Dag-uman",
+        "slack_id": "U08SG05099S",
+        "slack_name": "@nievermore17",
+    },
+    # Michael Quoc
+    "mike@demand.io": {
+        "email": "mike@demand.io",
+        "notion_id": "fe83a2b5-4c90-4f60-b120-49eb6600bc33",
+        "notion_name": "Michael Quoc",
+        "slack_id": "U01FYL3UPQQ",
+        "slack_name": "@mike443",
+    },
+    # Marianna Muro
+    "marianna@demand.io": {
+        "email": "marianna@demand.io",
+        "notion_id": "d92ca339-4672-4ced-8a41-756152481645",
+        "notion_name": "Marianna Muro",
+        "slack_id": "U07JVV6MD63",
+        "slack_name": "@marianna",
+    },
+    # Tess Fenn
+    "tess.fenn@demand.io": {
+        "email": "tess.fenn@demand.io",
+        "notion_id": "1dad872b-594c-810b-9fab-0002e6adad5d",
+        "notion_name": "Tess Fenn",
+        "slack_id": "U08NDCGN679",
+        "slack_name": "@tess.fenn",
+    },
+    # Sean Fisher
+    "seanfisher@demand.io": {
+        "email": "seanfisher@demand.io",
+        "notion_id": "079f5e00-b9bd-4e7b-aca3-6857f833c937",
+        "notion_name": "Sean Fisher",
+        "slack_id": "U07LD71FEKZ",
+        "slack_name": "@seanfisher",
+    },
+    # Lucas Machado
+    "lucas@demand.io": {
+        "email": "lucas@demand.io",
+        "notion_id": "9eb54398-449f-45f3-906f-db4bda3c8bdd",
+        "notion_name": "Lucas Machado",
+        "slack_id": "U07LTL5ARU3",
+        "slack_name": "@lucasmachado",
+    },
+    # André Junior
+    "andre@demand.io": {
+        "email": "andre@demand.io",
+        "notion_id": "96de467d-c98e-4e57-96f3-73f635329d8c",
+        "notion_name": "André Junior",
+        "slack_id": "U07NXHWUXQ8",
+        "slack_name": "@andrebrown",
+    },
+    # Cutler Simpson
+    "cutler@demand.io": {
+        "email": "cutler@demand.io",
+        "notion_id": "d7b6bb25-eaa5-41f5-b993-4f3c8cbb08f3",
+        "notion_name": "Cutler Simpson",
+        "slack_id": "U075H1011HC",
+        "slack_name": "@cutlersimpson",
+    },
+    # Demand.io People Ops
+    "careers@demand.io": {
+        "email": "careers@demand.io",
+        "notion_id": "26934bd9-8ba2-4dbb-80fa-fd6cd0509316",
+        "notion_name": "Demand.io People Ops",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Rey Bangas
+    "rey@demand.io": {
+        "email": "rey@demand.io",
+        "notion_id": "621de8e7-08c8-434b-95fd-f379f3b25d2e",
+        "notion_name": "Rey Bangas",
+        "slack_id": "U095S0M1BNC",
+        "slack_name": "@bangasrey",
+    },
+    # Louie Taypin
+    "louie@demand.io": {
+        "email": "louie@demand.io",
+        "notion_id": "ad0d7d3f-d47c-4a3e-9320-2c02beebfeb3",
+        "notion_name": "Louie Taypin",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # SimplyCodes Support
+    "support@demand.io": {
+        "email": "support@demand.io",
+        "notion_id": "a3bc19e0-da60-474c-bf09-847fd83b31d0",
+        "notion_name": "SimplyCodes Support",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Liz Quoc
+    "liz@demand.io": {
+        "email": "liz@demand.io",
+        "notion_id": "78d1bd86-2503-4a4a-8cea-5e0e8b60e2cd",
+        "notion_name": "Liz Quoc",
+        "slack_id": "U148YMAD8",
+        "slack_name": "@liz",
+    },
+    # Vitor Almeida
+    "valmeida@demand.io": {
+        "email": "valmeida@demand.io",
+        "notion_id": "8ad429ce-967e-4421-8af0-93617d37f6ae",
+        "notion_name": "Vitor Almeida",
+        "slack_id": "U03RUN7RZ18",
+        "slack_name": "@valmeida",
+    },
+    # Luís Filipe Severgnini
+    "luis@demand.io": {
+        "email": "luis@demand.io",
+        "notion_id": "bd40084d-eb52-47f3-be43-904f5f338d5b",
+        "notion_name": "Luís Filipe Severgnini",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Jayce Jurado
+    "jayce@demand.io": {
+        "email": "jayce@demand.io",
+        "notion_id": "10bd872b-594c-81a8-8a88-0002610f0140",
+        "notion_name": "Jayce Jurado",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Francisco Blanco
+    "fran@demand.io": {
+        "email": "fran@demand.io",
+        "notion_id": "4b6d8084-733b-4acd-80ce-2353772eafaa",
+        "notion_name": "Francisco Blanco",
+        "slack_id": "U04728F5GCA",
+        "slack_name": "@fran",
+    },
+    # Ellen Grace Alcalde
+    "ellengracealcalde@gmail.com": {
+        "email": "ellengracealcalde@gmail.com",
+        "notion_id": "ac4dd13a-beca-41e4-9b1a-abeb7b50606f",
+        "notion_name": "Ellen Grace Alcalde",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Jessica Ho
+    "jessica@demand.io": {
+        "email": "jessica@demand.io",
+        "notion_id": "6ce0bcc3-82c9-49ad-826d-fae8a87bcb9f",
+        "notion_name": "Jessica Ho",
+        "slack_id": "U0501ME76LE",
+        "slack_name": "@jessica395",
+    },
+    # Max Arias
+    "marias@demand.io": {
+        "email": "marias@demand.io",
+        "notion_id": "4a028986-c8f9-44a6-802e-2cf4af78db4a",
+        "notion_name": "Max Arias",
+        "slack_id": "U02F49BLH2L",
+        "slack_name": "@marias",
+    },
+    # Rey Bangas
+    "rrbangas@gmail.com": {
+        "email": "rrbangas@gmail.com",
+        "notion_id": "9b9e4c75-f0eb-4b14-aff0-df37a9c6a064",
+        "notion_name": "Rey Bangas",
+        "slack_id": "U095S0M1BNC",
+        "slack_name": "@bangasrey",
+    },
+    # Jimmy Doheny
+    "jimmy@demand.io": {
+        "email": "jimmy@demand.io",
+        "notion_id": "b3711d5d-dac4-4500-b892-095e7e2bff5a",
+        "notion_name": "Jimmy Doheny",
+        "slack_id": "U6ANV4GD9",
+        "slack_name": "@jdoheny",
+    },
+    # Dylan Ler
+    "dylan@demand.io": {
+        "email": "dylan@demand.io",
+        "notion_id": "d83937e8-4acc-4d83-9b6e-c2f970655517",
+        "notion_name": "Dylan Ler",
+        "slack_id": "U05NNMXLT34",
+        "slack_name": "@dylanler",
+    },
+    # Kelli Schall
+    "kelli@demand.io": {
+        "email": "kelli@demand.io",
+        "notion_id": "dc7ed8b7-721e-4278-b8cb-a1df6b542bbb",
+        "notion_name": "Kelli Schall",
+        "slack_id": "U05UXSG1R51",
+        "slack_name": "@kellischall",
+    },
+    # Jenesis Lerin
+    "jenesislerin19@gmail.com": {
+        "email": "jenesislerin19@gmail.com",
+        "notion_id": "836cf4d0-a9b7-4894-bc70-a858f3e2fa49",
+        "notion_name": "Jenesis Lerin",
+        "slack_id": "U0950E6JUUE",
+        "slack_name": "@jenesislerin",
+    },
+    # Jonah
+    "jpolz181992@gmail.com": {
+        "email": "jpolz181992@gmail.com",
+        "notion_id": "bb8681cd-d9dc-4e80-8143-e36e8c935542",
+        "notion_name": "Jonah",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # mjanecosia@gmail.com
+    "mjanecosia@gmail.com": {
+        "email": "mjanecosia@gmail.com",
+        "notion_id": "d99a64f3-a362-4d78-a87f-0d0dcc92fc19",
+        "notion_name": "mjanecosia@gmail.com",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # April Macaorao
+    "i.am.nanachan@gmail.com": {
+        "email": "i.am.nanachan@gmail.com",
+        "notion_id": "b50925a4-9d57-4ff8-9c3b-fd4b8a911710",
+        "notion_name": "April Macaorao",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Angela Vidal
+    "vidalz.angela@gmail.com": {
+        "email": "vidalz.angela@gmail.com",
+        "notion_id": "953c969b-27ed-4dc2-ad03-05c8e4fd0765",
+        "notion_name": "Angela Vidal",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Dimple Llenes
+    "dsllenes1788@gmail.com": {
+        "email": "dsllenes1788@gmail.com",
+        "notion_id": "3e003c18-bcd8-47a8-ad50-a0bbc0e1780b",
+        "notion_name": "Dimple Llenes",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Jessielyn Alag
+    "jessielynalag26@gmail.com": {
+        "email": "jessielynalag26@gmail.com",
+        "notion_id": "f2cd041f-e9be-4c60-a4f6-f2fd09d6db95",
+        "notion_name": "Jessielyn Alag",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Joan
+    "maryjoan.mjb@gmail.com": {
+        "email": "maryjoan.mjb@gmail.com",
+        "notion_id": "65efd224-454e-45e5-a930-f9f1c4a39959",
+        "notion_name": "Joan",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # jesson garcia
+    "jesson.garcia17@gmail.com": {
+        "email": "jesson.garcia17@gmail.com",
+        "notion_id": "4421e860-f18a-4e42-b660-985da679f002",
+        "notion_name": "jesson garcia",
+        "slack_id": "U08ET3L4T7F",
+        "slack_name": "@jesson.garcia17",
+    },
+    # Jade Vincent Albaracin
+    "albaracinjadevincent@gmail.com": {
+        "email": "albaracinjadevincent@gmail.com",
+        "notion_id": "94791443-a9ab-42cf-b995-89b5c35777a7",
+        "notion_name": "Jade Vincent Albaracin",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Nestor Dimagna-ong
+    "pradenest@gmail.com": {
+        "email": "pradenest@gmail.com",
+        "notion_id": "2bca66d3-7749-4cf9-b59e-7bf1e2ff6506",
+        "notion_name": "Nestor Dimagna-ong",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # verlie urot
+    "luckyxian08@gmail.com": {
+        "email": "luckyxian08@gmail.com",
+        "notion_id": "8973468f-fb88-4e22-8c05-0d28485554d6",
+        "notion_name": "verlie urot",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Honey Jean Grullo
+    "honeygrullo@gmail.com": {
+        "email": "honeygrullo@gmail.com",
+        "notion_id": "817030a5-d95b-4fcc-becc-50e3dcf29771",
+        "notion_name": "Honey Jean Grullo",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Elena Madrigal
+    "elena.madrigal@demand.io": {
+        "email": "elena.madrigal@demand.io",
+        "notion_id": "144d872b-594c-81a5-a479-00023ded31a8",
+        "notion_name": "Elena Madrigal",
+        "slack_id": "U084RCWPT1A",
+        "slack_name": "@elena.madrigal",
+    },
+    # Analyn Quiño
+    "kenyuko21@gmail.com": {
+        "email": "kenyuko21@gmail.com",
+        "notion_id": "c7cdd740-a8e3-442d-b1f6-4c3802ea6b4b",
+        "notion_name": "Analyn Quiño",
+        "slack_id": "U08D9JTAJ90",
+        "slack_name": "@kenyuko21",
+    },
+    # Mary Grace Nuyda
+    "nuydag@gmail.com": {
+        "email": "nuydag@gmail.com",
+        "notion_id": "ad52c1ee-4f73-4888-b979-06c0e92b57e1",
+        "notion_name": "Mary Grace Nuyda",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # RHEA GHEN REPEDRO
+    "rheaghen2018@gmail.com": {
+        "email": "rheaghen2018@gmail.com",
+        "notion_id": "b509c25c-3982-4947-9b9a-1d43f05b299b",
+        "notion_name": "RHEA GHEN REPEDRO",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Emily Rhea Judilla
+    "emilyrheajudilla@gmail.com": {
+        "email": "emilyrheajudilla@gmail.com",
+        "notion_id": "445797de-98e0-4330-bf24-703252218264",
+        "notion_name": "Emily Rhea Judilla",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Jesel Bangas
+    "aleonarj8@gmail.com": {
+        "email": "aleonarj8@gmail.com",
+        "notion_id": "f6911662-492d-47e8-8f6d-7a1ffeb95ffb",
+        "notion_name": "Jesel Bangas",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Devina Amaca
+    "devinaamaca@gmail.com": {
+        "email": "devinaamaca@gmail.com",
+        "notion_id": "c886401e-56c2-4428-881a-bb21f946cb3a",
+        "notion_name": "Devina Amaca",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # James Elorcha
+    "james.elorcha@demand.io": {
+        "email": "james.elorcha@demand.io",
+        "notion_id": "14ad872b-594c-819a-acc4-0002ac32ee1a",
+        "notion_name": "James Elorcha",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Annalyn Aroy
+    "anna.lyn102693@gmail.com": {
+        "email": "anna.lyn102693@gmail.com",
+        "notion_id": "e4b6b372-d6f6-4d8c-86a9-155ffff5fa03",
+        "notion_name": "Annalyn Aroy",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # celestina boiles
+    "boilescelestina@gmail.com": {
+        "email": "boilescelestina@gmail.com",
+        "notion_id": "115f7bfa-3665-4ab0-830f-f5ff1dd0fa26",
+        "notion_name": "celestina boiles",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Emma Lyn Soronio
+    "emmalynsoronio@gmail.com": {
+        "email": "emmalynsoronio@gmail.com",
+        "notion_id": "bfcc2e1f-16bb-4558-b4e9-e2efe8c6366c",
+        "notion_name": "Emma Lyn Soronio",
+        "slack_id": "U095S0MCLDN",
+        "slack_name": "@soronioemmalyn",
+    },
+    # Mar Louie Taypin
+    "marlouiettaypin@gmail.com": {
+        "email": "marlouiettaypin@gmail.com",
+        "notion_id": "cbf7d598-ca55-463c-b012-6ad473941246",
+        "notion_name": "Mar Louie Taypin",
+        "slack_id": "U08SG09SU68",
+        "slack_name": "@marlouiettaypin",
+    },
+    # Jubishi Hatamosa
+    "jubishijhatamosa@gmail.com": {
+        "email": "jubishijhatamosa@gmail.com",
+        "notion_id": "2a5540e8-a622-4757-8e71-fd25d6e875d2",
+        "notion_name": "Jubishi Hatamosa",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Maria Clemense Agbon
+    "mariaclemenseagbon@gmail.com": {
+        "email": "mariaclemenseagbon@gmail.com",
+        "notion_id": "405f3d1b-ed1d-4612-bb33-ee979ba5df41",
+        "notion_name": "Maria Clemense Agbon",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # rea bangas
+    "reabangas15@gmail.com": {
+        "email": "reabangas15@gmail.com",
+        "notion_id": "dbb818cf-9040-4f13-bcde-bbaad56abf95",
+        "notion_name": "rea bangas",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Maria Pedrilyn Panal
+    "mppanal@gmail.com": {
+        "email": "mppanal@gmail.com",
+        "notion_id": "c56fc683-8f5f-45a2-aed3-9f5c3a027b81",
+        "notion_name": "Maria Pedrilyn Panal",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # jenesislerin17@gmail.com
+    "jenesislerin17@gmail.com": {
+        "email": "jenesislerin17@gmail.com",
+        "notion_id": "14ad872b-594c-8150-a8e3-000265e6f1fb",
+        "notion_name": "jenesislerin17@gmail.com",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Vernie Dag-uman
+    "nievermore17@gmail.com": {
+        "email": "nievermore17@gmail.com",
+        "notion_id": "84c38249-53c4-47be-8cf6-9c0ccabf85a4",
+        "notion_name": "Vernie Dag-uman",
+        "slack_id": "U08SG05099S",
+        "slack_name": "@nievermore17",
+    },
+    # Renelyn Natividad
+    "rbnatividad1331@gmail.com": {
+        "email": "rbnatividad1331@gmail.com",
+        "notion_id": "1e1d3cdf-468a-43a2-b451-5b75285ba0b5",
+        "notion_name": "Renelyn Natividad",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # silvina naomi alvarez
+    "silvinanaomialvarez@gmail.com": {
+        "email": "silvinanaomialvarez@gmail.com",
+        "notion_id": "80ebfdd0-c893-4db7-a0f3-32df27be4fc7",
+        "notion_name": "silvina naomi alvarez",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Lilma Lasala
+    "llasala63@gmail.com": {
+        "email": "llasala63@gmail.com",
+        "notion_id": "17beeb14-8bf3-4f96-962a-3bfb845e51fe",
+        "notion_name": "Lilma Lasala",
+        "slack_id": "U094YC2M2MR",
+        "slack_name": "@lilmalasala",
+    },
+    # James Timothy Elorcha
+    "elorchajames708@gmail.com": {
+        "email": "elorchajames708@gmail.com",
+        "notion_id": "47be4262-f854-4622-8793-4d95dcc7bb87",
+        "notion_name": "James Timothy Elorcha",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Gonzalo Damole
+    "gonzdams@gmail.com": {
+        "email": "gonzdams@gmail.com",
+        "notion_id": "2ce2292f-fdd6-475d-a456-5e4eca0c262f",
+        "notion_name": "Gonzalo Damole",
+        "slack_id": "U08SX8PHY2D",
+        "slack_name": "@gonzalo",
+    },
+    # Dexter Amaca
+    "dexamaca@gmail.com": {
+        "email": "dexamaca@gmail.com",
+        "notion_id": "938a31bd-d99e-4928-93a9-e582765ac4d7",
+        "notion_name": "Dexter Amaca",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Caiña Easun lou
+    "easunloucaina@gmail.com": {
+        "email": "easunloucaina@gmail.com",
+        "notion_id": "ef150d82-7c95-4077-8274-55bd868f40a5",
+        "notion_name": "Caiña Easun lou",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Gen
+    "gevz163@gmail.com": {
+        "email": "gevz163@gmail.com",
+        "notion_id": "2cd32d3f-b383-4ec9-be27-df00a6f4edda",
+        "notion_name": "Gen",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Aristeo Aranilla
+    "aristeoaranilla@gmail.com": {
+        "email": "aristeoaranilla@gmail.com",
+        "notion_id": "7cfa6d92-6383-4daf-994d-13816725e1e0",
+        "notion_name": "Aristeo Aranilla",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # lioniel sunico
+    "llsunico15@gmail.com": {
+        "email": "llsunico15@gmail.com",
+        "notion_id": "e603d9bd-c64e-414b-8d77-c5625c54952d",
+        "notion_name": "lioniel sunico",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Gladys Jun Agbon
+    "gladysagbon@gmail.com": {
+        "email": "gladysagbon@gmail.com",
+        "notion_id": "184e56ec-73a3-4659-8da1-ba3aefbe238c",
+        "notion_name": "Gladys Jun Agbon",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # BERDELA JUDILLA
+    "berdelaajudilla@gmail.com": {
+        "email": "berdelaajudilla@gmail.com",
+        "notion_id": "072957cf-b338-4f58-848e-febe453acfac",
+        "notion_name": "BERDELA JUDILLA",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Luciano Milen
+    "luciano@demand.io": {
+        "email": "luciano@demand.io",
+        "notion_id": "170d872b-594c-812c-9661-0002b9381aca",
+        "notion_name": "Luciano Milen",
+        "slack_id": "U0877FF5H34",
+        "slack_name": "@luciano",
+    },
+    # Jubishi Hatamosa
+    "jubishi@demand.io": {
+        "email": "jubishi@demand.io",
+        "notion_id": "171d872b-594c-8107-b395-00023cdef81b",
+        "notion_name": "Jubishi Hatamosa",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Alejandro Maggi
+    "alejandro@demand.io": {
+        "email": "alejandro@demand.io",
+        "notion_id": "173d872b-594c-8117-9e55-00024a449756",
+        "notion_name": "Alejandro Maggi",
+        "slack_id": "U0877203Y0M",
+        "slack_name": "@alejandro",
+    },
+    # Robert Guicheteau
+    "robert@demand.io": {
+        "email": "robert@demand.io",
+        "notion_id": "181d872b-594c-81bf-846d-0002bdbf6a68",
+        "notion_name": "Robert Guicheteau",
+        "slack_id": "U0891T6QMAT",
+        "slack_name": "@robert169",
+    },
+    # Mel Brittner
+    "mel@demand.io": {
+        "email": "mel@demand.io",
+        "notion_id": "18ad872b-594c-8190-9123-00023b977fc4",
+        "notion_name": "Mel Brittner",
+        "slack_id": "U08A221K5FH",
+        "slack_name": "@melbrittner",
+    },
+    # Analyn Quino
+    "analyn@demand.io": {
+        "email": "analyn@demand.io",
+        "notion_id": "19bd872b-594c-8101-9454-00024da85ae4",
+        "notion_name": "Analyn Quino",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Andrei Costa
+    "andrei@demand.io": {
+        "email": "andrei@demand.io",
+        "notion_id": "19fd872b-594c-8143-bbbf-000235211006",
+        "notion_name": "Andrei Costa",
+        "slack_id": "U08DXK576SZ",
+        "slack_name": "@andrei",
+    },
+    # Jonalyn Polinar
+    "jonalyn@demand.io": {
+        "email": "jonalyn@demand.io",
+        "notion_id": "1a1d872b-594c-8141-953f-0002b42dc572",
+        "notion_name": "Jonalyn Polinar",
+        "slack_id": "U08EQFWLQM7",
+        "slack_name": "@jpolz181992",
+    },
+    # Michael Quoc
+    "mike-recruiting@demand.io": {
+        "email": "mike-recruiting@demand.io",
+        "notion_id": "1a7d872b-594c-81f0-9bd7-00023f36fd2d",
+        "notion_name": "Michael Quoc",
+        "slack_id": "U01FYL3UPQQ",
+        "slack_name": "@mike443",
+    },
+    # Nestor Dimagnaong
+    "nestor@demand.io": {
+        "email": "nestor@demand.io",
+        "notion_id": "1bcd872b-594c-819d-892c-00025e90fbb7",
+        "notion_name": "Nestor Dimagnaong",
+        "slack_id": "U08JE5VC7GW",
+        "slack_name": "@pradenest",
+    },
+    # Gonzalo Damole
+    "gonzalo@demand.io": {
+        "email": "gonzalo@demand.io",
+        "notion_id": "1bcd872b-594c-81ac-9bcd-00024eda8f04",
+        "notion_name": "Gonzalo Damole",
+        "slack_id": "U08SX8PHY2D",
+        "slack_name": "@gonzalo",
+    },
+    # Graham Lee
+    "graham@demand.io": {
+        "email": "graham@demand.io",
+        "notion_id": "1c9d872b-594c-81c5-9642-0002cc76a013",
+        "notion_name": "Graham Lee",
+        "slack_id": "U08LHTZLZL2",
+        "slack_name": "@graham",
+    },
+    # Whitney Ishop
+    "whitney@demand.io": {
+        "email": "whitney@demand.io",
+        "notion_id": "1d5d872b-594c-81c9-a6ef-00021b7e5a84",
+        "notion_name": "Whitney Ishop",
+        "slack_id": "U08N0FZ0X37",
+        "slack_name": "@whitney461",
+    },
+    # Brian Li
+    "brian.li@demand.io": {
+        "email": "brian.li@demand.io",
+        "notion_id": "18ad872b-594c-81e2-90ff-000201f87cce",
+        "notion_name": "Brian Li",
+        "slack_id": "U08ANKDJE7Q",
+        "slack_name": "@brian.li",
+    },
+    # Delaney Silver
+    "delaney@demand.io": {
+        "email": "delaney@demand.io",
+        "notion_id": "1c7d872b-594c-814d-a13f-00022fb79d37",
+        "notion_name": "Delaney Silver",
+        "slack_id": "U08KYFKTJ77",
+        "slack_name": "@delaney",
+    },
+    # Cansu Kaya
+    "cansu@demand.io": {
+        "email": "cansu@demand.io",
+        "notion_id": "ae5f20d5-951f-4651-a2c3-d291b127223f",
+        "notion_name": "Cansu Kaya",
+        "slack_id": "U06USK806K0",
+        "slack_name": "@cansukaya",
+    },
+    # Jean-Pierre Arsenault
+    "jp@demand.io": {
+        "email": "jp@demand.io",
+        "notion_id": "1ded872b-594c-8103-9384-0002f14c3d58",
+        "notion_name": "Jean-Pierre Arsenault",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Delaney Silver
+    "delaney-recruiting@demand.io": {
+        "email": "delaney-recruiting@demand.io",
+        "notion_id": "1edd872b-594c-81b1-8332-00023930d172",
+        "notion_name": "Delaney Silver",
+        "slack_id": "U08KYFKTJ77",
+        "slack_name": "@delaney",
+    },
+    # Bri Stanback
+    "bri@demand.io": {
+        "email": "bri@demand.io",
+        "notion_id": "40e1ef0b-df55-4e3b-b1b0-6a5783cfdc5c",
+        "notion_name": "Bri Stanback",
+        "slack_id": "U02BJAJV1",
+        "slack_name": "@bri",
+    },
+    # Andrius Krasuckas
+    "andrius-cw@demand.io": {
+        "email": "andrius-cw@demand.io",
+        "notion_id": "1f1d872b-594c-813c-bc2f-0002201593f3",
+        "notion_name": "Andrius Krasuckas",
+        "slack_id": "U0955MBTNA0",
+        "slack_name": "@andriuskrasuckas",
+    },
+    # Demandio Tools
+    "demandio.tools@gmail.com": {
+        "email": "demandio.tools@gmail.com",
+        "notion_id": "20dd872b-594c-81d8-8b1a-0002be90a538",
+        "notion_name": "Demandio Tools",
+        "slack_id": None,
+        "slack_name": None,
+    },
+    # Emma Lyn Soronio
+    "emma.soronio@demand.io": {
+        "email": "emma.soronio@demand.io",
+        "notion_id": "213d872b-594c-81be-a897-0002da54ac12",
+        "notion_name": "Emma Lyn Soronio",
+        "slack_id": "U095S0MCLDN",
+        "slack_name": "@soronioemmalyn",
+    },
+    # Tara Phung
+    "tara-cw@demand.io": {
+        "email": "tara-cw@demand.io",
+        "notion_id": "21fd872b-594c-8171-9534-000288504489",
+        "notion_name": "Tara Phung",
+        "slack_id": "U093FP3NJQ4",
+        "slack_name": "@tara-cw",
+    },
+    # Dakota Nunley
+    "dakota@demand.io": {
+        "email": "dakota@demand.io",
+        "notion_id": "22bd872b-594c-81ca-8e8d-000226a2aaed",
+        "notion_name": "Dakota Nunley",
+        "slack_id": "U0955MAH8KW",
+        "slack_name": "@dakota",
+    },
+}

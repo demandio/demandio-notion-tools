@@ -52,6 +52,9 @@ This repository uses a two-level approach to environment variables:
    # Shared API Keys
    NOTION_API_KEY=your-notion-api-key
    GOOGLE_CLOUD_PROJECT=your-gcp-project-id
+   ANTHROPIC_API_KEY=your-anthropic-key
+   OPENAI_API_KEY=your-openai-key
+   GEMINI_API_KEY=your-gemini-key
    ```
 
 2. **Tool Level** (`.env` in tool directories):
@@ -59,7 +62,6 @@ This repository uses a two-level approach to environment variables:
    # Tool-specific variables
    GOOGLE_DRIVE_FOLDER_ID=your-drive-folder-id  # notion-drive-sync
    SLACK_BOT_TOKEN=your-slack-token             # slack-grounding
-   ANTHROPIC_API_KEY=your-claude-key            # slack-grounding
    ```
 
 The shared `env.py` module handles loading these variables with the following priority:
@@ -70,13 +72,14 @@ The shared `env.py` module handles loading these variables with the following pr
 ### Usage in Code
 
 ```python
-from shared.env import load_tool_env, get_notion_api_key
+from shared.env import load_tool_env, get_notion_api_key, get_openai_api_key
 
 # Load tool-specific environment (will also load root .env)
 load_tool_env('your-tool-name')
 
 # Get shared variables
 notion_key = get_notion_api_key()
+openai_key = get_openai_api_key()
 ```
 
 ## 🚀 Quick Start
