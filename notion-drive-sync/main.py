@@ -1,20 +1,31 @@
-# main.py - rewritten end-to-end for minimal-dependency, robust Notion to Drive sync
-################################################################################
-# Standard library
-import os
+"""
+Google Cloud Function that syncs Notion pages to Google Drive.
+"""
+import functions_framework
+from typing import Dict, Any, Optional
 import json
-import logging
-import tempfile
-from datetime import datetime, timedelta
-from typing import List, Dict, Any, Optional
+import os
+from datetime import datetime
 
-# Third-party
-import functions_framework  # Cloud Functions entry-point decorator
-import pytz
-import requests
-from notion_client import Client
-import google.auth
-from google.auth.transport.requests import Request as GoogleRequest
+from notion_client import Client as NotionClient
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaIoBaseUpload
+from io import BytesIO
+
+from shared.env import (
+    load_tool_env,
+    get_notion_api_key,
+    get_gcp_project_id,
+    get_drive_folder_id
+)
+
+# Load tool-specific environment variables
+load_tool_env('notion-drive-sync')
+
+# Initialize clients
+notion = NotionClient(auth=get_notion_api_key())
+DRIVE_FOLDER_ID = get_drive_folder_id()
 
 ################################################################################
 # Configuration

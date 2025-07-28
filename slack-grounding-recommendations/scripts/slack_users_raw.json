@@ -1,0 +1,270 @@
+{
+  "slackbot": {
+    "slack_id": "USLACKBOT",
+    "display_name": "Slackbot"
+  },
+  "bri": {
+    "slack_id": "U02BJAJV1",
+    "display_name": "Bri Stanback"
+  },
+  "mike": {
+    "slack_id": "U02BJAWG9",
+    "display_name": "Michael Quoc"
+  },
+  "liz": {
+    "slack_id": "U148YMAD8",
+    "display_name": "Liz Quoc"
+  },
+  "jdoheny": {
+    "slack_id": "U6ANV4GD9",
+    "display_name": "Jimmy Doheny"
+  },
+  "reybangas": {
+    "slack_id": "U6B3J7P0U",
+    "display_name": "Rey Bangas"
+  },
+  "mike443": {
+    "slack_id": "U01FYL3UPQQ",
+    "display_name": "Michael Quoc"
+  },
+  "marias": {
+    "slack_id": "U02F49BLH2L",
+    "display_name": "Max Arias"
+  },
+  "valmeida": {
+    "slack_id": "U03RUN7RZ18",
+    "display_name": "Vitor Almeida"
+  },
+  "luis": {
+    "slack_id": "U040NU7JL0P",
+    "display_name": "Lu\u00eds Severgnini"
+  },
+  "fran": {
+    "slack_id": "U04728F5GCA",
+    "display_name": "Francisco Blanco"
+  },
+  "isaac": {
+    "slack_id": "U04SBLX6U83",
+    "display_name": "Isaac Sornborger"
+  },
+  "jessica395": {
+    "slack_id": "U0501ME76LE",
+    "display_name": "Jessica Ho"
+  },
+  "ankitsrinivas": {
+    "slack_id": "U05BYS3GRNX",
+    "display_name": "Ankit Srinivas"
+  },
+  "dylanler": {
+    "slack_id": "U05NNMXLT34",
+    "display_name": "Dylan Ler"
+  },
+  "kellischall": {
+    "slack_id": "U05UXSG1R51",
+    "display_name": "Kelli Schall"
+  },
+  "corinabaldasare": {
+    "slack_id": "U067A351Q1M",
+    "display_name": "Corina Baldasare"
+  },
+  "luccadasilva": {
+    "slack_id": "U0695T1H5GF",
+    "display_name": "Lucca Silva"
+  },
+  "davidguzman": {
+    "slack_id": "U06A8LT89BM",
+    "display_name": "David Guzman"
+  },
+  "harrisondesantis": {
+    "slack_id": "U06GRMEQ7NW",
+    "display_name": "Harrison DeSantis"
+  },
+  "cansukaya": {
+    "slack_id": "U06USK806K0",
+    "display_name": "Cansu Kaya"
+  },
+  "cutlersimpson": {
+    "slack_id": "U075H1011HC",
+    "display_name": "Cutler Simpson"
+  },
+  "mppanal": {
+    "slack_id": "U075W7LULTU",
+    "display_name": "Maria Panal"
+  },
+  "rachellesagun": {
+    "slack_id": "U07ASGPTK7E",
+    "display_name": "Rachelle Sagun"
+  },
+  "marianna": {
+    "slack_id": "U07JVV6MD63",
+    "display_name": "Marianna Muro"
+  },
+  "seanfisher": {
+    "slack_id": "U07LD71FEKZ",
+    "display_name": "Sean Fisher"
+  },
+  "lucasmachado": {
+    "slack_id": "U07LTL5ARU3",
+    "display_name": "Lucas Machado"
+  },
+  "andrebrown": {
+    "slack_id": "U07NXHWUXQ8",
+    "display_name": "Andr\u00e9 Junior"
+  },
+  "elena.madrigal": {
+    "slack_id": "U084RCWPT1A",
+    "display_name": "Elena Madrigal"
+  },
+  "alejandro": {
+    "slack_id": "U0877203Y0M",
+    "display_name": "Alejandro Maggi"
+  },
+  "luciano": {
+    "slack_id": "U0877FF5H34",
+    "display_name": "Luciano Milen"
+  },
+  "robert169": {
+    "slack_id": "U0891T6QMAT",
+    "display_name": "Robert Guicheteau"
+  },
+  "melbrittner": {
+    "slack_id": "U08A221K5FH",
+    "display_name": "Mel Brittner"
+  },
+  "brian.li": {
+    "slack_id": "U08ANKDJE7Q",
+    "display_name": "Brian Li"
+  },
+  "linaghimp10": {
+    "slack_id": "U08CEMU426B",
+    "display_name": "Lina Ghimp"
+  },
+  "kenyuko21": {
+    "slack_id": "U08D9JTAJ90",
+    "display_name": "Analyn Qui\u00f1o"
+  },
+  "andrei": {
+    "slack_id": "U08DXK576SZ",
+    "display_name": "Andrei Costa"
+  },
+  "jpolz181992": {
+    "slack_id": "U08EQFWLQM7",
+    "display_name": "Jonalyn Polinar"
+  },
+  "jesson.garcia17": {
+    "slack_id": "U08ET3L4T7F",
+    "display_name": "Jesson Garcia"
+  },
+  "aleonarj8": {
+    "slack_id": "U08ET3M8PM3",
+    "display_name": "Jesel Aleonar-Bangas"
+  },
+  "dsllenes1788": {
+    "slack_id": "U08ET3MEZJ9",
+    "display_name": "Ceres Llenes"
+  },
+  "visualpicklecreative": {
+    "slack_id": "U08G4KYN24X",
+    "display_name": "Edward Davis"
+  },
+  "gonzdams": {
+    "slack_id": "U08JE5SD10W",
+    "display_name": "Gonzalo Damole"
+  },
+  "pradenest": {
+    "slack_id": "U08JE5VC7GW",
+    "display_name": "Nestor Dimagnaong"
+  },
+  "delaney": {
+    "slack_id": "U08KYFKTJ77",
+    "display_name": "Delaney Silver"
+  },
+  "graham": {
+    "slack_id": "U08LHTZLZL2",
+    "display_name": "Graham Lee"
+  },
+  "whitney461": {
+    "slack_id": "U08N0FZ0X37",
+    "display_name": "Whitney Ishop"
+  },
+  "tess.fenn": {
+    "slack_id": "U08NDCGN679",
+    "display_name": "Tess Fenn"
+  },
+  "jp": {
+    "slack_id": "U08Q3817DT2",
+    "display_name": "JP Arsenault"
+  },
+  "andrius-cw": {
+    "slack_id": "U08RW9E1K36",
+    "display_name": "Andrius kr"
+  },
+  "jubishijhatamosa": {
+    "slack_id": "U08SFVDHVQU",
+    "display_name": "Jubishi J Hatamosa"
+  },
+  "nievermore17": {
+    "slack_id": "U08SG05099S",
+    "display_name": "Vernie Dag-uman"
+  },
+  "marlouiettaypin": {
+    "slack_id": "U08SG09SU68",
+    "display_name": "Mar louie Taypin"
+  },
+  "gonzalo": {
+    "slack_id": "U08SX8PHY2D",
+    "display_name": "Gonzalo Damole"
+  },
+  "tara-cw": {
+    "slack_id": "U093FP3NJQ4",
+    "display_name": "Tara Phung"
+  },
+  "lilmalasala": {
+    "slack_id": "U094YC2M2MR",
+    "display_name": "Lilma Lasala"
+  },
+  "jenesislerin": {
+    "slack_id": "U0950E6JUUE",
+    "display_name": "Jenesis Lerin"
+  },
+  "dakota": {
+    "slack_id": "U0955MAH8KW",
+    "display_name": "Dakota Nunley"
+  },
+  "andriuskrasuckas": {
+    "slack_id": "U0955MBTNA0",
+    "display_name": "Andrius Krasuckas"
+  },
+  "alexcobb": {
+    "slack_id": "U095HBVJV0R",
+    "display_name": "Alexander Cobb"
+  },
+  "jonahwhite": {
+    "slack_id": "U095N9JGURL",
+    "display_name": "Jonah White"
+  },
+  "alexandergenov": {
+    "slack_id": "U095Q22U04V",
+    "display_name": "Alex Genov"
+  },
+  "bangasrey": {
+    "slack_id": "U095S0M1BNC",
+    "display_name": "Rey Bangas"
+  },
+  "mariapedrilynpanal": {
+    "slack_id": "U095S0M589E",
+    "display_name": "Maria"
+  },
+  "soronioemmalyn": {
+    "slack_id": "U095S0MCLDN",
+    "display_name": "Emma Lyn Soronio"
+  },
+  "emmacw": {
+    "slack_id": "U096P3DEG0N",
+    "display_name": "Emma"
+  },
+  "jennykoreny": {
+    "slack_id": "U097DJCFMJ8",
+    "display_name": "Jenny Koreny"
+  }
+}
